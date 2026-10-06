@@ -1,0 +1,90 @@
+:root {
+  --poc-ink: #0f172a;
+  --poc-muted: #475569;
+  --poc-panel: rgba(255, 255, 255, 0.92);
+  --poc-line: #d7e2ea;
+  --poc-accent: #c45c26;
+  --poc-sea: #0b3d5c;
+  --poc-sea-2: #1a6b8a;
+  --poc-bg-1: #e8f1f6;
+  --poc-bg-2: #f7f3ee;
+}
+
+html,
+body,
+#q-app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--poc-ink);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(26, 107, 138, 0.18), transparent 60%),
+    radial-gradient(900px 400px at 90% 0%, rgba(196, 92, 38, 0.12), transparent 55%),
+    linear-gradient(165deg, var(--poc-bg-1), var(--poc-bg-2) 45%, #eef2f5);
+  font-family: 'Source Serif 4', 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+}
+
+h1,
+h2,
+h3,
+.brand-mark {
+  font-family: 'Fraunces', 'Source Serif 4', Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+.poc-shell {
+  min-height: 100vh;
+}
+
+.poc-topbar {
+  backdrop-filter: blur(10px);
+  background: rgba(11, 61, 92, 0.92);
+  color: #f8fafc;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.poc-panel {
+  background: var(--poc-panel);
+  border: 1px solid var(--poc-line);
+  border-radius: 4px;
+}
+
+.poc-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  color: var(--poc-muted);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+.poc-muted {
+  color: var(--poc-muted);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+.poc-sans {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+.matrix-table th,
+.matrix-table td {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 0.85rem;
+  vertical-align: top;
+}
+
+.matrix-table th {
+  background: #0b3d5c;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.matrix-table td:first-child {
+  font-weight: 600;
+  background: #f1f5f9;
+  white-space: nowrap;
+}
